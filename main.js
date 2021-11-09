@@ -25,4 +25,12 @@ setInterval(() => {
  let seconds = date.getSeconds()
 
  sec.innerHTML = `${seconds}`
+ 
+   if(seconds === 1) {
+    new Notification("Timer", {
+                body:"Se passaram um minuto",
+                image:'https://avatars.githubusercontent.com/u/88394758?s=40&v=4'
+            })
+  }
+  },1000)
 },1000)
