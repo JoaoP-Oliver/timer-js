@@ -1,7 +1,7 @@
  //hours
  setInterval(() => {
-  let hour = document.getElementById('hour')
   let date = new Date()
+  let hour = document.getElementById('hour')
   let hora = date.getHours()
 
   hour.innerHTML = `${hora < 10 ? '0' + hora : hora}`
@@ -19,9 +19,8 @@ setInterval(() => {
 
 //seconds
 setInterval(() => {
- let sec = document.getElementById('sec')
-
  let date = new Date()
+ let sec = document.getElementById('sec')
  let seconds = date.getSeconds()
 
  sec.innerHTML = `${seconds < 10 ? '0' + seconds : seconds}`
