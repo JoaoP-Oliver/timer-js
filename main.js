@@ -11,7 +11,6 @@
 setInterval(() => {
  let date = new Date()
  let minutes = date.getMinutes()
-
  let min = document.getElementById('min')
 
  min.innerHTML = `${minutes < 10 ? '0' + minutes : minutes}`
