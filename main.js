@@ -4,7 +4,7 @@
   let date = new Date()
   let hora = date.getHours()
 
-  hour.innerHTML = `${hora}`
+  hour.innerHTML = `${hora < 10 ? '0' + hora : hora}`
 },1000)
 
 //minutes
@@ -14,7 +14,7 @@ setInterval(() => {
 
  let min = document.getElementById('min')
 
- min.innerHTML = `${minutes}`
+ min.innerHTML = `${minutes < 10 ? '0' + minutes : minutes}`
 },1000)
 
 //seconds
@@ -24,13 +24,5 @@ setInterval(() => {
  let date = new Date()
  let seconds = date.getSeconds()
 
- sec.innerHTML = `${seconds}`
- 
-  if(seconds === 1) {
-  new Notification("Timer", {
-              body:"Se passaram um minuto",
-              image:'https://avatars.githubusercontent.com/u/88394758?s=40&v=4'
-          })
-}
- 
+ sec.innerHTML = `${seconds < 10 ? '0' + seconds : seconds}`
 },1000)
